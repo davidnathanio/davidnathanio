@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tilt+Warp&display=swap');
+
+
+* {
+    /* margin: 0px; */
+
+}
+
+body{
+    background-color: #E5E5E5;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFFFFF !important;
+    margin-bottom: 100px;
+}
+
+header .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+
+}
+
+header .nav-list li {
+    list-style-type: none;
+    padding: .5rem 1.5rem;
+}
+header .nav-list li a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: larger;
+    color: #000000;
+    transition: 0.3s;
+}
+header .nav-list li a:hover{
+    color: #8383be;
+}
+
+main .profile-picture img{
+    background-color: #8383be;
+    border-radius: 50%;
+}
+
+.introduction-message {
+    font-family: 'Tilt Warp', cursive;
+}
+
+.introduction-message h1{
+    font-size: 40px;
+}
+
+.introduction-message p{
+    font-weight: bold;
+    font-size: 24px;
+    color:#2B2B2B;
+}
+
+
+.introduction-message span{
+    color: var(--color-primary);
+    background: rgb(137, 157, 40);
+    background: linear-gradient(
+    135deg,
+    rgba(131, 131, 190, 1) -0%,
+    rgba(80, 167, 217, 1) 100%
+  );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.introduction{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+
+}
+.introduction p{
+    font-family: 'Roboto', sans-serif;
+}
+
+.introduction .intro-right img{
+    width: 250px;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    padding-left: 20vw;
+    padding-right: 20vw; 
+}
+
+.about-me-button button {
+    background-color: #8383be;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.about-me-button button a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+
+}
+
+.judul-about-me{
+    font-size: 2.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    
+}
+
+.about-me-message article{
+    font-size:1.4em;
+    font-family: 'Roboto', sans-serif;
+    font-weight:regular;
+    color: #2B2B2B;
+}
+
+main .skill-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+    padding-left: 20vw;
+    padding-right: 20vw; 
+    margin-bottom: 2vw;
+}
+
+
+.judul-skills{
+    font-size: 2.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    
+}
+
+.skill-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 42px;
+    padding-top: 42px;
+    font-family: 'Roboto', sans-serif;
+    font-size:larger;
+    font-weight: bold;
+    background-color: #FFFFFF;
+}
+
+.skill-card i {
+    font-size: 4rem;
+    color: #8383be;
+}
+.skill-card p{
+    font-family: 'Roboto', sans-serif;
+}
+
+footer{
+    background: rgb(131,131,190);
+    background: linear-gradient(90deg, rgba(131,131,190,0.8632703081232493) 0%, rgba(80,167,217,0.7484243697478992) 100%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100vw;
+}
+.judul-footer{
+    font-size: 2.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    font-size: 2rem;
+  
+}
+
+.social-media i{
+    color: #2b2b2b;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 640px) {
+    .introduction{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .introduction-message {
+        text-align: center;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article {
+        text-align: center;
+    }
+
+    main .skill-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
